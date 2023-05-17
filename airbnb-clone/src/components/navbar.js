@@ -1,10 +1,10 @@
 import React from "react";
 import '../assets/navbar.css'
 
-const Navbar = () => {
+function Navbar () {
   return(
     <nav>
-      hi
+      <img src="images/airbnb-logo.png" alt="airbnb-logo" className="nav__logo"/>
     </nav>
   )
 }

@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+}
+
+.hero .hero__img {
+  max-width: 500px;
+  align-self: center;
+}
+
+.content h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.content p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  max-width: 460px;
+}
