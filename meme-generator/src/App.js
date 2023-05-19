@@ -1,6 +1,6 @@
 import React from "react";
 import './assets/style.css'
-import Header from "./components/Header"
+import Header from "./components/header"
 import Meme from "./components/Meme"
 
 function App() {
