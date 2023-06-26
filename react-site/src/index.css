@@ -5,17 +5,29 @@
 }
 
 body {
-  background-color: #282d35;
-  height: 100vh;
   font-family: Inter, sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ===== NavBar ===== */
 
 nav {
   display: flex;
   align-items: center;
-  background-color: #21222a;
+  background-color: #fff;
   height: 90px;
   padding: 30px 25px;
+  box-shadow: 0px 1px 4px #00000025;
+  z-index: 1;
+}
+
+nav.dark {
+  background-color: #21222a;
 }
 
 nav > h3 {
@@ -26,10 +38,14 @@ nav > h3 {
 }
 
 nav > h4 {
-  color: #deebf8;
+  color: #2B283A;
   font-weight: 600;
   font-size: 1rem;
-  
+  margin-right: 2rem;
+}
+
+nav.dark > h4 {
+  color: #deebf8;
 }
 
 nav > img {
@@ -37,13 +53,83 @@ nav > img {
   margin-right: 7px;
 }
 
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 35px;
+  height: 18px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler--dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/* ===== Main ===== */
+
 main {
   padding: 60px 30px;
-  color: #fff;
-  background-image: url('./images/reactjs-icon.png');
+  color: #2b283a;
+  background-image: url('./images/reactjs-icon-2.png');
   background-repeat: no-repeat;
-  background-position: right 75%;
+  background-position: right 20%;
   background-size: 12rem;
+  background-color: white;
+  height: 100vh;
+}
+
+main.dark {
+  background-image: url("./images/reactjs-icon.png"); 
+  background-color: #282D35;
+  color: white;    
 }
 
 main h1 {
