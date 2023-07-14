@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Die(props) {
+
   return (
     <div className="die-face">
       <h2 className="die-num">{props.value}</h2>
