@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: Karla, sans-serif;
   background: #B2BED0;
   display: grid;
   place-items: center;
@@ -21,8 +22,18 @@ main {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -52,11 +63,29 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: white;
 }
 
 .die-num {
   font-size: 1.8rem;
   /* font-family: Inter, sans-serif; */
+}
+
+.roll-dice {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035ff;
+  color: white;
+  font-size: 1.2rem;
   font-family: Karla, sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .7);
 }
