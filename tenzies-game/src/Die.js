@@ -8,7 +8,7 @@ export default function Die(props) {
 
   let dieValue = props.value
 
-  function renderSwitch() {
+  function switchNumbers() {
     switch(dieValue) {
       case 1:
         return( 
@@ -45,7 +45,6 @@ export default function Die(props) {
           <div className="die-dot five">
             <span></span>
             <span></span>
-            {/* <span></span> */}
             <span></span>
             <span></span>
           </div>
@@ -70,7 +69,7 @@ export default function Die(props) {
       style={styles}
       onClick={props.holdDice}
     >
-      {renderSwitch()}
+      {switchNumbers()}
     </div>
   )
 }
