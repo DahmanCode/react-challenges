@@ -13,7 +13,6 @@ body {
 }
 
 main {
-  /* margin: 20px; */
   background: #eeeeee;
   /* width: 600px; */
   max-width: 600px;
@@ -22,7 +21,7 @@ main {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -38,6 +37,7 @@ main {
 
 @media screen and (max-width: 700px) {
   main {
+    margin: 20px;
     height: 500px;
   }
 }
@@ -50,11 +50,22 @@ main {
 }
 
 .details {
-  width: 90%;
+  width: 100%;
+  height: auto;
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+  .details {
+    justify-content: space-between;
+  }
+
+  .details p {
+    margin: 0;
+  }
 }
 
 .details p {
@@ -149,6 +160,13 @@ main {
   font-size: 1.2rem;
   font-family: Karla, sans-serif;
   cursor: pointer;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .roll-dice {
+    margin-bottom: 0;
+  }
 }
 
 .roll-dice:focus {
