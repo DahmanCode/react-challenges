@@ -85,7 +85,7 @@ function App() {
       clearInterval(gameTimer)
     }
     return () => clearInterval(gameTimer)
-  })
+  }, [sec, min, hour])
 
   const diceEl = dice.map((die) => (
     <Die
