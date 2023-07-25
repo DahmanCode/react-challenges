@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <header>
         <Link className="site-logo" to="/">
-          <img src={Logo} width={80} alt="logo" />
+          <img src={Logo} width={85} alt="logo" />
         </Link>
         <nav>
           <Link to="/about">About</Link>
