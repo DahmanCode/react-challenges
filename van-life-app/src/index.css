@@ -70,7 +70,7 @@ header a:hover {
   color: white;
   padding: 45px 23px;
   position: relative;
-  margin: 23px;
+  /* margin: 23px; */
 }
 
 .home-container h1 {
