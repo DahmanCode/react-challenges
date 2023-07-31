@@ -1,34 +1,28 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom"
 
-function HostLayout() {
+function VansLayout() {
   return (
     <>
       <nav>
         <NavLink
           className={({isActive}) => isActive ? "active-link" : null }
-          to="."
+          to="/vans"
           end
         >
           Dashboard
         </NavLink>
         <NavLink
           className={({isActive}) => isActive ? "active-link" : null }
-          to="income"
+          to="/vans/pricing"
         >
           Income
         </NavLink>
         <NavLink
           className={({isActive}) => isActive ? "active-link" : null }
-          to="vans"
+          to="/vans/photos"
         >
           Vans
-        </NavLink>
-        <NavLink
-          className={({isActive}) => isActive ? "active-link" : null }
-          to="reviews"
-        >
-          Reviews
         </NavLink>
       </nav>
       <Outlet />
@@ -36,4 +30,4 @@ function HostLayout() {
   )
 }
 
-export default HostLayout
+export default VansLayout
