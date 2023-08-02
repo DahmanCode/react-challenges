@@ -232,6 +232,17 @@ footer {
   /* width: 100%; */
 }
 
+.van-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.van-list-filter-buttons > a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
 .van-list-container h1 {
   margin: 0;
 }
@@ -288,10 +299,10 @@ footer {
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .van-type:hover {
+.van-type:hover {
   color: #FFEAD0;
-  background-color: #4D4D4D;
-} */
+  /* background-color: #4D4D4D; */
+}
 
 .van-type:focus {
   outline: none;
