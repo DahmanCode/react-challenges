@@ -123,8 +123,7 @@ footer {
   display: block;
   color: black;
   text-decoration: none;
-  margin-top: 60px;
-  margin-left: 26px;
+  margin-bottom: 26px;
   transition: all .2s ease;
 }
 
@@ -345,18 +344,18 @@ i[class*='van-type-'] {
   padding: 27px;
 }
 
-.van-detail-container .back-button {
+/* .back-button {
   color: black;
   text-decoration: none;
-}
+} */
 /* 
 .van-detail-container .back-button:visited {
   
 } */
 
-.van-detail-container .back-button span {
+/* .back-button span {
   text-decoration: underline;
-}
+} */
 
 .van-detail {
   display: grid;

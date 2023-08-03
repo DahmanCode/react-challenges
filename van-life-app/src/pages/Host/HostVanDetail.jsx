@@ -17,6 +17,7 @@ function HostVansDetail() {
 
   return (
     <section>
+      <div className="host-van-detail-layout-container">
       <Link 
         to="/host/vans" 
         // to=".." 
@@ -25,7 +26,6 @@ function HostVansDetail() {
       >
         &larr; <span>Back to all vans</span>
       </Link>
-      <div className="host-van-detail-layout-container">
         <div className="host-van-detail">
           <img src={currentVan.imageUrl} />
           <div className="host-van-detail-info-text">
