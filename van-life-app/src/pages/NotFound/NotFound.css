@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  /* --header-height: 3.5rem; */
+  --first-color: #FFEAD0;
+  --text-color: hsl(38, 8%, 8%);
+  --body-font: 'Space Grotesk', sans-serif;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .65rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} 
+
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.not_found {
+  overflow: hidden;
+  background-color: var(--first-color);
+  padding: 9rem 0 2rem;
+  height: 100vh;
+}
+
+.not_found_container {
+  display: grid;
+  align-items: center;
+  row-gap: 2.5rem;
+}
+
+.not_found_data {
+  text-align: center;
+}
+
+.not_found_subtitle {
+  display: block;
+}
+
+.not_found_title {
+  font-size: var(--biggest-font-size);
+  margin: .75rem 0;
+}
+
+.not_found_button {
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: var(--text-color);
+  color: #fff;
+  padding: .8rem 1.5rem;
+  border-radius: 3rem;
+  transition: .4s;
+}
+
+.not_found_button:hover {
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+}
+
+.not_found_img img {
+  width: 380px;
+  animation: floaty 1.8s infinite alternate;
+}
+
+.not_found_img {
+  justify-self: center;
+}
+
+.not_found_shadow {
+  width: 180px;
+  height: 34px;
+  background-color: hsla(38, 21%, 19%, .16);
+  margin: 0 auto;
+  border-radius: 50%;
+  filter: blur(7px);
+  animation: shadow 1.8s infinite alternate;
+}
+
+
+/* Animation */
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(.85, .85);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .not_found {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .not_found_container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .not_found_data {
+    text-align: initial;
+  }
+
+  .not_found_img img {
+    width: 500px;
+  }
+
+  .not_found_shadow {
+    width: 280px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1070px){
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

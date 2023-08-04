@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       <Link className="site-logo" to="/">
-        <img src={Logo} width={85} alt="logo" />
+        <img src={Logo} width={70} alt="logo" />
       </Link>
       <nav>
         <NavLink 
