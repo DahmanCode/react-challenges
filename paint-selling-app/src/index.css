@@ -7,6 +7,13 @@
   margin: 0;
 }
 
+body{
+  position: relative;
+  width: 100vw;
+  height: calc(100vh + 100px);
+  overflow-x: hidden;
+}
+
 .scr {
   position: absolute;
   left: 50%;
@@ -23,6 +30,7 @@
   overflow: hidden;
   border-radius: 20px;
   /* border: #1c1c1c 1px solid; */
+  /* margin-bottom: 50px; */
 }
 
 .scr .overlap-wrapper {
@@ -187,6 +195,8 @@
 }
 
 .footer {
+  width: 100%;
+  margin-top: 50px;
   position: absolute;
   bottom: 12px;
   left: 50%;
