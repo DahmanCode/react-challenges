@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from '../../Header'
+import Header from '../Header'
 import { FiHeart } from "react-icons/fi"
 
 import bgImg from '../../assets/bgImg.jpeg'

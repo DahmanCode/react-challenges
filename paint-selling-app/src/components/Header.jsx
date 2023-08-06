@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import backImg from "./assets/back.png";
+import backImg from "../assets/back.png";
 
 function Header() {
   return (

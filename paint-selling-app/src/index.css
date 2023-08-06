@@ -10,7 +10,7 @@
 .scr {
   position: absolute;
   left: 50%;
-  top: 50px;
+  top: 25px;
   transform: translate(-50%);
   background-color: #ffffff;
   display: flex;
@@ -184,4 +184,31 @@
   position: absolute;
   top: 12px;
   white-space: nowrap;
+}
+
+.footer {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.footer h4 {
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  line-height: 22px;
+  color: #c64513;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 400;
 }

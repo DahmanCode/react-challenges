@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from './Header'
 
-import forwardImg from './assets/forward.png'
+import forwardImg from '../assets/forward.png'
 
 export default function Home() {
   return (
