@@ -30,6 +30,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-block: 10px;
 }
 
@@ -52,7 +53,11 @@ nav a {
   color: #4D4D4D;
   font-weight: 600;
   padding: 5px 0px;
-  margin: 0 26px;
+  margin: 0 20px;
+}
+
+header a:last-child {
+  margin-right: 20px;
 }
 
 nav a:first-child {
@@ -79,7 +84,7 @@ nav a::after {
 }
 
 nav a:hover::after {
-  width: calc(100% + 10px);
+  width: 100% ;
 }
 
 nav a:hover {
@@ -186,6 +191,7 @@ footer {
 
 .about-page-container {
   padding-inline: 23px;
+  padding-bottom: 23px;
   /* width: 100vw; */
 }
 
