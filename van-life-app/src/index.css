@@ -43,7 +43,7 @@ a.active-link {
 }
 
 a.active-link::after {
-  width: calc(100% + 10px);
+  width: 100%;
 }
 
 header a,
@@ -144,21 +144,25 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 550px;
+  min-height: calc(100vh - 154px); /* 154px = 80px (height of header) + 74px (height of footer) */
   color: white;
   padding: 45px 23px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
   /* margin: 23px; */
 }
 
 .home-container h1 {
   font-weight: 700;
   font-size: 2.25rem;
-  line-height: 42px;
+  line-height: 52px;
 }
 
 .home-container p {
-  line-height: 24px;
+  line-height: 34px;
 }
 
 .home-container a {
@@ -167,19 +171,18 @@ footer {
   text-decoration: none;
   background-color: #FF8C38;
   border: none;
-  width: calc(100% - 45px);
-  position: absolute;
-  left: 50%;
+  width: 325px;
+  /* position: absolute; */
+  /* left: 50%;
   bottom: 45px;
-  transform: translate(-50%);
-  margin-top: 27px;
+  transform: translate(-50%); */
+  margin-top: 47px;
   padding-block: .75rem;
   color: white;
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
   transition: background .1s ease-in-out;
-  transform-origin: center;
 }
 
 .home-container a:hover {
