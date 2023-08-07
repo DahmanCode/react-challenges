@@ -34,10 +34,12 @@ img {
 }
 
 .not_found {
+  /* position: absolute; */
   overflow: hidden;
   background-color: var(--first-color);
-  padding: 9rem 0 2rem;
-  height: 100vh;
+  padding: 5rem 0 2rem;
+  height: calc(100vh - 154px); /* 154px = 80px (height of header) + 74px (height of footer) */
+  /* width: 100vw; */
 }
 
 .not_found_container {
