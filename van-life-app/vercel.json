@@ -1,8 +1,6 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)", 
-      "destination": "./src/pages/NotFound/NotFound.jsx"
-    }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/NotFound.jsx" }
   ]
 }
