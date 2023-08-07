@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)", 
-      "destination": "/not-found"
+      "destination": "./src/pages/NotFound/NotFound.jsx"
     }
   ]
 }
