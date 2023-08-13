@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import Logo from "../assets/vanLogo.png"
+import Login from "../assets/user.svg"
 
 function Header() {
   return (
@@ -28,6 +29,9 @@ function Header() {
         >
           Vans
         </NavLink>
+        <Link to={"login"} className="login-link">
+          <img src={Login} alt="" className="login-icon" />
+        </Link>
       </nav>
     </header>
   )
