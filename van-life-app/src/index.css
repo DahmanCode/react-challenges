@@ -20,6 +20,13 @@ body {
 scrollbar-width: none;
 }
 
+.message {
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .site-wrapper {
   min-height: 100vh;
   display: flex;
