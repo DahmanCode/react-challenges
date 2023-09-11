@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-color: #39DB4A;
   --danger-color: #FF6868;

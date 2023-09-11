@@ -41,6 +41,12 @@ export default function Header() {
           <li>
             <Link>Offers</Link>
           </li>
+          <img 
+            src={X} 
+            alt="" 
+            className={`x ${show ? 'open' : ''}`}
+            onClick={() => setShow(!show)}
+          />
         </ul>
 
         <div className='icons'>
@@ -59,12 +65,6 @@ export default function Header() {
             className={`menu ${show ? 'close' : ''}`}
             onClick={() => setShow(!show)}
             />
-          <img 
-            src={X} 
-            alt="" 
-            className={`x ${show ? 'open' : ''}`}
-            onClick={() => setShow(!show)}
-          />
         </div>
       </nav>
     </>

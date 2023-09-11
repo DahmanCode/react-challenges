@@ -11,11 +11,6 @@ nav .logo {
   align-items: center;
 }
 
-nav .logo > img {
-  position: relative;
-  bottom: -5px;
-}
-
 nav .logo div {
   display: flex;
   align-items: center;
@@ -81,6 +76,11 @@ nav .icons {
   cursor: pointer;
 }
 
+.icons img.menu,
+.icons img.x {
+  margin-right: 0;
+}
+
 .icons .bag {
   position: relative;
 }
@@ -123,8 +123,8 @@ nav .icons {
   }
 
   nav ul {
-    position: absolute;
-    top: 5.5rem;
+    position: fixed;
+    top: 2rem;
     right: -100%;
     width: 270px;
     height: auto;
@@ -135,6 +135,7 @@ nav .icons {
     border-radius: 10px;
     transition: all .5s ease;
     box-shadow: 0 15px 30px #00000033;
+    z-index: 9999;
   }
   
   nav ul li {
@@ -146,6 +147,14 @@ nav .icons {
   }
 
   nav ul.open {
+    top: 2rem;
     right: 5%;
+  }
+
+  ul .x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
   }
 }
