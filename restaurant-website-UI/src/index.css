@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 :root {
   --primary-color: #39DB4A;
   --danger-color: #FF6868;
@@ -18,14 +14,18 @@ html {
 }
 
 body {
-  margin: 2rem 10%;
   font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.site-wrapper {
+  /* width: 100%; */
+  padding: 2rem 10%;
   overflow-x: hidden;
 }
 
 @media (max-width: 920px) {
-  body {
-    margin: 2rem 5%;
+  .site-wrapper {
+    padding: 2rem 5%;
   }
 }
 
