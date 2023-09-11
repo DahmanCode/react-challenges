@@ -1,0 +1,151 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo > img {
+  position: relative;
+  bottom: -5px;
+}
+
+nav .logo div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 41px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+@media (max-width: 920px) {
+  .logo img {
+    height: 25px;
+  }
+
+  .logo div img{
+    height: 22px;
+  } 
+
+  nav .logo div {
+    width: 28px;
+    height: 35px;
+  }
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+li img {
+  margin-left: 8px;
+  width: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+}
+
+a.active,
+a:hover {
+  color: var(--primary-color);
+}
+
+nav .icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  width: 20px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.icons .bag {
+  position: relative;
+}
+
+.bag img {
+  width: 18px;
+}
+
+.bag p {
+  position: absolute;
+  top: -8px;
+  right: 4px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons button img {
+  width: 18px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.x,
+.menu,
+.menu.close {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .menu,
+  .x.open {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 5.5rem;
+    right: -60%;
+    width: 270px;
+    height: auto;
+    background-color: #dafbfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .5s ease;
+    box-shadow: 0 15px 30px #00000033;
+  }
+  
+  nav ul li {
+    margin: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  nav ul.open {
+    right: 5%;
+  }
+}
