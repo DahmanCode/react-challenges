@@ -125,7 +125,7 @@ nav .icons {
   nav ul {
     position: absolute;
     top: 5.5rem;
-    right: -60%;
+    right: -100%;
     width: 270px;
     height: auto;
     background-color: #dafbfd;
